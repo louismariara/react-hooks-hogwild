@@ -141,6 +141,7 @@ ul {
 }
 .hog-list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap; /* Allows tiles to wrap to the next line if needed */
   gap: 20px; /* Adds space between the tiles */
   justify-content: space-around; /* Center the tiles and distribute space */
@@ -164,6 +165,32 @@ ul {
   height: 150px; /* Set a fixed height to maintain consistency */
   object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
   border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+/* App.css (or inline styles) */
+
+form {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+form input, form button {
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #218838;
 }
 
 
