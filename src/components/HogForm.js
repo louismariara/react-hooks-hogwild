@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function AddHogForm({ addNewHog }) {
+function HogForm({ addNewHog }) {
   const [formData, setFormData] = useState({
     name: "",
     image: "",
@@ -84,4 +84,4 @@ function AddHogForm({ addNewHog }) {
   );
 }
 
-export default AddHogForm;
+export default HogForm;

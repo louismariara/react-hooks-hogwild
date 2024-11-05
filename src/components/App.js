@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import hogsData from "../porkers_data"; // data from porkers_data.js
 import HogList from "./HogList";
 import FilterSort from "./FilterSort";
-import AddHogForm from "./AddHogForm";
+import HogForm from "./HogForm";
 
 function App() {
   const [hogs, setHogs] = useState(hogsData);
@@ -32,7 +32,7 @@ function App() {
         onSortChange={handleSortChange}
       />
       <HogList hogs={sortedHogs} />
-      <AddHogForm addNewHog={addNewHog} />
+      <HogForm addNewHog={addNewHog} />
     </div>
   );
 }
